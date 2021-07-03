@@ -1,0 +1,42 @@
+body {
+    background-color: #464956;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #aca68c;
+    font-size: 48px;
+}
+
+canvas {
+    border: 5px solid darkgray;
+    height: 55%;
+    margin: 20px auto;
+    padding: 20px;
+    width: 40%;
+}
+
+.dark_sea_green {
+    background-color: #92ac8c;
+}
+
+.english_lavender {
+    background-color: #ac8c92;
+}
+
+.heliotrope_gray {
+    background-color: #ac8ca2;
+}
+
+.morning_blue {
+    background-color: #8cac96;
+}
+
+.btn {
+    background-color: #aca68c;
+    border: none;
+    font-size: 16px;
+    padding: 16px 32px;
+    width: 15%;
+}
