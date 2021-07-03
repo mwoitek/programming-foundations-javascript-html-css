@@ -1,0 +1,56 @@
+ul {
+    /* Remove indentation of list items */
+    padding-left: 0;
+}
+
+li {
+    background-color: #eee;
+    border: 1px solid #c3c3c3;
+    font-size: 20px;
+    /* Remove traditional bullet from front of list items */
+    list-style-type: none;
+    padding: 10px 0px 10px 5px;
+}
+
+.done {
+    background-color: green;
+}
+
+.remove {
+    background-color: red;
+}
+
+li.finished {
+    background-color: gray;
+    color: white;
+    text-decoration: line-through;
+}
+
+input[type="text"] {
+    font-size: 18px;
+    padding: 10px;
+    width: 94%;
+}
+
+input[type="button"] {
+    font-size: 1.2em;
+    margin: -6px 4px 0px 0px;
+}
+
+#addButton {
+    padding: 10px;
+}
+
+.aboutcolor {
+    background-color: yellow;
+}
+
+#divabout {
+    font-size: 20px;
+    margin: 10px;
+    width: 300px;
+}
+
+.important {
+    background-color: lightblue;
+}

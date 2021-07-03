@@ -1,0 +1,43 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>TODO List</title>
+    </head>
+    <body>
+        <h1 id="myHeader">TODO List</h1>
+        <input type="button" id="addButton" value="Add" onclick="addTask();" />
+        <input type="text" id="input" placeholder="Enter task..." />
+        <hr />
+        <ul id="tasks">
+            <li>
+                <input
+                    type="button"
+                    class="done"
+                    onclick="markDone(this.parentNode)"
+                    value="&#x2713;"
+                />
+                <input
+                    type="button"
+                    class="remove"
+                    onclick="remove(this.parentNode)"
+                    value="&#x2715;"
+                />
+                <input
+                    type="button"
+                    class="important"
+                    onclick="important(this.parentNode)"
+                    value="!"
+                />
+                Make TODO list
+            </li>
+        </ul>
+        <hr />
+        <div id="divabout"></div>
+        <input type="button" value="About" onclick="doAbout();" />
+        <input type="button" value="Clear" onclick="clearAbout();" />
+        <script src="./script.js"></script>
+    </body>
+</html>
