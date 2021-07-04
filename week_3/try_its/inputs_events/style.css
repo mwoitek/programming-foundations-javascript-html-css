@@ -1,0 +1,41 @@
+body {
+    background-color: #464956;
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #aca68c;
+    font-size: 48px;
+}
+
+canvas {
+    border: 5px solid darkgray;
+    height: 40%;
+    margin: 15px auto;
+    width: 40%;
+}
+
+div {
+    background-color: #aca68c;
+    font-size: 18px;
+    margin: 15px auto;
+    padding: 15px;
+    width: 30%;
+}
+
+label {
+    padding: 20px;
+}
+
+input[type="button"] {
+    background-color: #aca68c;
+    border: none;
+    font-size: 16px;
+    padding: 16px;
+    width: 15%;
+}
+
+.dark_sea_green {
+    background-color: #92ac8c;
+}
