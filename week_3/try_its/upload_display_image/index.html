@@ -1,0 +1,26 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Upload and Display an Image</title>
+    </head>
+    <body>
+        <h1>Upload and Display Image</h1>
+        <canvas id="myCanvas"></canvas>
+        <!-- <p> -->
+        <!--     Filename <input type="text" id="filename" /> -->
+        <!--     <input type="button" value="Upload" onclick="upload();" /> -->
+        <!-- </p> -->
+        <p>
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/*"
+                onchange="upload();"
+            />
+        </p>
+        <script src="../../../week_2/cs101/SimpleImage.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
