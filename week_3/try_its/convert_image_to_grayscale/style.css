@@ -1,0 +1,31 @@
+body {
+    background-color: #060930;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+h1 {
+    color: #595b83;
+    font-size: 36px;
+}
+
+canvas {
+    background-color: #595b83;
+}
+
+p {
+    color: #595b83;
+    font-size: 20px;
+}
+
+input[type="button"],
+input[type="file"]::file-selector-button {
+    background-color: #595b83;
+    border: none;
+    font-size: 20px;
+    padding: 3px 6px;
+}
+
+input[type="file"] {
+    font-size: 20px;
+}

@@ -1,0 +1,32 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./style.css" />
+        <title>Convert an Image to Grayscale</title>
+    </head>
+    <body>
+        <h1>Convert Image to Grayscale</h1>
+        <canvas id="canvasOriginal"></canvas>
+        <canvas id="canvasGrayscale" hidden></canvas>
+        <p>
+            <input
+                type="file"
+                id="fileInput"
+                accept="image/*"
+                onchange="upload();"
+            />
+        </p>
+        <p>
+            <input
+                type="button"
+                id="btnMakeGray"
+                value="Make Gray"
+                onclick="makeGray();"
+                disabled
+            />
+        </p>
+        <script src="../../../week_2/cs101/SimpleImage.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
