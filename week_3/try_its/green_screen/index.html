@@ -1,0 +1,44 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Green Screen Online</title>
+    </head>
+    <body>
+        <h1>Green Screen Online</h1>
+        <h2>Foreground Image</h2>
+        <canvas id="canvasForeground" height="150" width="300"></canvas>
+        <p>
+            <input
+                type="file"
+                id="fileForeground"
+                accept="image/*"
+                onchange="upload(this.id);"
+            />
+        </p>
+        <h2>Background Image</h2>
+        <canvas id="canvasBackground" height="150" width="300"></canvas>
+        <p>
+            <input
+                type="file"
+                id="fileBackground"
+                accept="image/*"
+                onchange="upload(this.id);"
+            />
+        </p>
+        <p>
+            <input type="button" value="Clear" onclick="clearAll();" />
+            <input
+                type="button"
+                value="Create Composite Image"
+                onclick="doGreenScreen();"
+            />
+        </p>
+        <div id="compositeImage" hidden>
+            <h2>Composite Image</h2>
+            <canvas id="canvasComposite" height="150" width="300"></canvas>
+        </div>
+        <script src="../../../week_2/cs101/SimpleImage.js"></script>
+        <script src="./script.js"></script>
+    </body>
+</html>
