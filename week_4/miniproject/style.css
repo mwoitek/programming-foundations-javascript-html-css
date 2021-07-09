@@ -1,0 +1,47 @@
+:root {
+    --lato: "Lato", sans-serif;
+    --roboto: "Roboto", sans-serif;
+    --aths-special: #ebe0cd;
+    --pancho: #eacfa9;
+    --sambuca: #341d0e;
+    --sepia: #653a13;
+    --btn-font-size: 16px;
+}
+
+body {
+    background-color: var(--pancho);
+}
+
+h1 {
+    color: var(--sambuca);
+    font-family: var(--roboto);
+    font-weight: 400;
+}
+
+h2 {
+    color: var(--sepia);
+    font-family: var(--roboto);
+    font-weight: 400;
+}
+
+canvas {
+    background-color: var(--aths-special);
+    border: 2px solid var(--sambuca);
+    display: block;
+}
+
+input[type="button"],
+input[type="file"]::file-selector-button {
+    background-color: var(--aths-special);
+    border: 3px solid var(--sepia);
+    color: var(--sepia);
+    font-family: var(--lato);
+    font-size: var(--btn-font-size);
+    padding: 6px;
+}
+
+input[type="file"] {
+    color: var(--sambuca);
+    font-family: var(--lato);
+    font-size: var(--btn-font-size);
+}
