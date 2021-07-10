@@ -13,15 +13,26 @@
     </head>
     <body>
         <h1>Image Filters</h1>
-        <canvas id="myCanvas" height="375" width="500"></canvas>
+        <canvas id="canvas" height="300" width="400"></canvas>
         <h2>Load Image</h2>
-        <input type="file" accept="image/*" onchange="" />
+        <input
+            type="file"
+            id="fileInput"
+            accept="image/*"
+            onchange="loadImage();"
+        />
         <h2>Choose Filter</h2>
         <p>
-            <input type="button" value="Grayscale" onclick="" />
-            <input type="button" value="Red" onclick="" />
-            <input type="button" value="Reset Image" onclick="" />
+            <input type="button" value="Grayscale" onclick="doGray();" />
+            <input type="button" value="Red" onclick="doRed();" />
+            <input type="button" value="Filter" onclick="" />
+            <input type="button" value="Filter" onclick="" />
+            <input type="button" value="Filter" onclick="" />
+            <input type="button" value="Reset Image" onclick="resetImage();" />
         </p>
-        <script src="./script.js"></script>
+        <script src="http://www.dukelearntoprogram.com/course1/common/js/image/SimpleImage.js"></script>
+        <script src="./js/global.js"></script>
+        <script src="./js/image.js"></script>
+        <script src="./js/filters.js"></script>
     </body>
 </html>
