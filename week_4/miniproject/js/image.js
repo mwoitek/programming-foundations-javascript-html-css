@@ -7,13 +7,16 @@ function fitCanvasToImage(canvas, image) {
     resizeCanvas(canvas, image.getHeight(), image.getWidth());
 }
 
-function loadImage() {
-    originalImage = new SimpleImage(fileInput);
-
+function loadFilterImages() {
     grayImage = new SimpleImage(fileInput);
     redImage = new SimpleImage(fileInput);
     sepiaImage = new SimpleImage(fileInput);
+    rainbowImage = new SimpleImage(fileInput);
+}
 
+function loadImage() {
+    originalImage = new SimpleImage(fileInput);
+    loadFilterImages();
     fitCanvasToImage(canvas, originalImage);
     originalImage.drawTo(canvas);
 }
@@ -25,9 +28,6 @@ function isImageNotLoaded(image) {
 function resetImage() {
     if (!isImageNotLoaded(originalImage)) {
         originalImage.drawTo(canvas);
-
-        grayImage = new SimpleImage(fileInput);
-        redImage = new SimpleImage(fileInput);
-        sepiaImage = new SimpleImage(fileInput);
+        loadFilterImages();
     }
 }
