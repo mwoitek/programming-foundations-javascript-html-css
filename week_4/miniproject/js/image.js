@@ -12,6 +12,7 @@ function loadImage() {
 
     grayImage = new SimpleImage(fileInput);
     redImage = new SimpleImage(fileInput);
+    sepiaImage = new SimpleImage(fileInput);
 
     fitCanvasToImage(canvas, originalImage);
     originalImage.drawTo(canvas);
@@ -27,5 +28,6 @@ function resetImage() {
 
         grayImage = new SimpleImage(fileInput);
         redImage = new SimpleImage(fileInput);
+        sepiaImage = new SimpleImage(fileInput);
     }
 }
